@@ -40,11 +40,8 @@ projectContainer.innerHTML = `
 </div>
 `;
 
-buttonSection.innerHTML = `
-   <a href="${data.url}" target="_blank">
-        <div class="block text-white text-center bg-amber-700 w-full p-4 rounded-full">Visit</div>
-    </a>
-    <a href="${data.github}" target="_blank">
-        <div class="block mt-2 text-white text-center bg-amber-900 w-full p-4 rounded-full">Github</div>
-    </a>
-`;
+const visit = document.querySelector("#button-visit");
+visit.setAttribute("href", data.url);
+
+const github = document.querySelector("#button-github");
+github.setAttribute("href", data.github);
